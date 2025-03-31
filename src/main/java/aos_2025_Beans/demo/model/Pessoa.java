@@ -1,6 +1,3 @@
-/*Crie uma aplicação Spring Boot em que você crie uma classe de configuração para criar um Bean de uma classe Pessoa, cujos atributos (nome, idade, sexo, estado civil e profissão) 
-são preenchidos a partir de campos disponíveis no arquivo application.properties e que os valores destes campos estejam presentes em variáveis de ambiente.*/
-
 public class Pessoa{
     private String nome;
     private int idade;
@@ -8,7 +5,7 @@ public class Pessoa{
     private String  estadoCivil;
     private String profissao;
 
-    public pessoa(String nome, int idade, String sexo, String estadoCivil, String profissao){
+    public Pessoa(String nome, int idade, String sexo, String estadoCivil, String profissao){
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
@@ -19,13 +16,31 @@ public class Pessoa{
     public String getNome(){
         return nome;
     }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
     public int getIdade(){
         return idade;
+    }
+    public void setIdade(int Idade){
+        this.idade = idade;
     }
     public String getSexo(){
         return sexo;
     }
+    public void setSexo(String sexo){
+        this.sexo = sexo;
+    }
     public String getEstadoCivil(){
         return estadoCivil;
+    }
+    public void setEstadoCivil(String estadoCivil){
+        this.estadoCivil = estadoCivil;
+    }
+    public String getProfissao(){
+        return profissao;
+    }
+    public void setProfissao(String Profissao){
+        this.profissao = Profissao;
     }
 }

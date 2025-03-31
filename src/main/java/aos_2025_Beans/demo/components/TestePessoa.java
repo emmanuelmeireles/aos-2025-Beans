@@ -10,9 +10,8 @@ import javax.annotation.PostConstruct;
 public class TestePessoa {
 
     @Autowired
-    private Pessoa pessoa;
-
-    @PostConstruct
+    private Pessoa pessoa context.getBean(Pessoa.class);
+    
     public void imprimirPessoa() {
         System.out.println("Nome: " + pessoa.getNome());
         System.out.println("Idade: " + pessoa.getIdade());
